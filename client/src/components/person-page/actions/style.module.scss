@@ -1,0 +1,91 @@
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+
+   .add {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      height: 45px;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      transition-duration: 0.3s;
+
+      &._sent {
+         pointer-events: none;
+
+         &::before {
+            position: absolute;
+            top: 10px;
+            left: calc(50% - 73px);
+            content: 'Request sent';
+         }
+
+         &::after {
+            position: absolute;
+            top: 10px;
+            left: calc(50% + 55px);
+            font-size: 25px;
+            font-family: 'IcoFont';
+            content: '\efd1';
+         }
+      }
+
+      &._request {
+         &::before {
+            position: absolute;
+            top: 10px;
+            left: calc(50% - 85px);
+            content: 'Accept request';
+         }
+
+         &::after {
+            position: absolute;
+            top: 10px;
+            left: calc(50% + 66px);
+            font-weight: 700;
+            font-size: 25px;
+            font-family: 'IcoFont';
+            content: '+';
+         }
+      }
+
+      &._friend {
+         background-color: #ccffd4;
+         pointer-events: none;
+
+         &::before {
+            position: absolute;
+            top: 10px;
+            left: calc(50% - 60px);
+            content: 'Your friend';
+         }
+
+         &::after {
+            position: absolute;
+            top: 8px;
+            left: calc(50% + 43px);
+            font-size: 25px;
+            font-family: 'IcoFont';
+            content: '\eed8';
+         }
+      }
+
+      &:hover {
+         color: #ffffff;
+         background-color: #cccccc;
+         -webkit-text-stroke-color: #ffffff;
+      }
+
+      &:active {
+         transform: translateY(-5px);
+      }
+
+      &::before {
+         content: 'Add friend';
+      }
+   }
+}

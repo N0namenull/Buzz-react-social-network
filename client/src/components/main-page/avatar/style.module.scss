@@ -1,0 +1,35 @@
+.avatar {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   max-width: 300px;
+   max-height: 400px;
+   cursor: pointer;
+
+   .avatarImage {
+      width: 100%;
+      object-fit: contain;
+   }
+}
+
+@media (max-width: 780px) {
+   .avatar {
+      align-items: center;
+      width: 100%;
+      min-width: 170px;
+      max-width: 200px;
+      min-height: 170px;
+      max-height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+   }
+}
+
+@media (max-width: 487px) {
+   .avatar {
+      min-width: 240px;
+      max-width: 300px;
+      min-height: 240px;
+      max-height: 300px;
+   }
+}

@@ -1,0 +1,45 @@
+.wrapper {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   max-width: 600px;
+   margin-bottom: 40px;
+
+   .title {
+      margin-right: 15px;
+      color: #2d2d2d;
+      font-weight: 700;
+      font-size: 60px;
+      transform: rotate(-1 deg);
+   }
+
+   .logo {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 140px;
+
+      .logoIcon {
+         position: relative;
+         width: 100%;
+         max-width: 70px;
+         height: 60px;
+
+         &::after {
+            position: absolute;
+            left: -8px;
+            color: #2d2d2d;
+            font-size: 65px;
+            font-family: 'IcoFont';
+            transition: 0.3s;
+            content: '\e855';
+         }
+      }
+
+      .logoText {
+         color: #2d2d2d;
+         font-size: 40px;
+         transform: rotate(-1 deg);
+      }
+   }
+}
