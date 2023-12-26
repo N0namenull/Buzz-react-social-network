@@ -6,4 +6,4 @@ Likes <br>
 Posts <br>
 My page <br>
 Authorization <br>
-registration <br>
+Registration <br>
