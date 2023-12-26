@@ -1,5 +1,5 @@
 # Social network <br> 
-React + TS + Cloudinary + Node.js + PostgreSQL
+React + TS + Cloudinary + Node.js + PostgreSQL <br>
 Features: <br>
 Friends <br>
 Likes <br>
